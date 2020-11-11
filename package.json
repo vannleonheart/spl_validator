@@ -1,0 +1,15 @@
+{
+  "name": "xvalidator",
+  "version": "0.1.0",
+  "description": "Simple and extensinble validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Bontor Sianipar",
+    "email": "vannleonheart@gmail.com"
+  },
+  "license": "ISC"
+}
