@@ -1,5 +1,5 @@
 {
-  "name": "xvalidator",
+  "name": "spl_validator",
   "version": "0.1.0",
   "description": "Simple and extensible validator",
   "main": "index.js",

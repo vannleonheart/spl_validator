@@ -1,15 +1,15 @@
-# xvalidator
+# spl_validator
 A simple and extensible validator for Node.js.
 
 ## Installation
 ```bash
-$ npm install --save xvalidator
+$ npm install --save spl_validator
 ```
 
 ## Usage
 ```js
-const xvalidator = require('xvalidator')
-const validator = new xvalidator()
+const spl_validator = require('spl_validator')
+const validator = new spl_validator()
 
 try {
     let input =  {
@@ -58,8 +58,8 @@ You can also store the ruleset in a ```.json```, ```.js```, or ```.txt``` file.
 ```
 
 ```js
-const xvalidator = require('xvalidator')
-const validator = new xvalidator()
+const spl_validator = require('spl_validator')
+const validator = new spl_validator()
 
 try {
     let input =  {
@@ -76,8 +76,8 @@ try {
 ## Append Rule
 You can also append new rule.
 ```js
-const xvalidator = require('xvalidator')
-const validator = new xvalidator()
+const spl_validator = require('spl_validator')
+const validator = new spl_validator()
 
 try {
     let input =  {
@@ -124,8 +124,8 @@ module.exports = Rules
 ```
 
 ```js
-const xvalidator = require('xvalidator')
-const validator = new xvalidator()
+const spl_validator = require('spl_validator')
+const validator = new spl_validator()
 
 try {
     let input =  {
