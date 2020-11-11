@@ -1,6 +1,6 @@
 {
   "name": "spl_validator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple and extensible validator",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,10 @@
   "author": {
     "name": "Bontor Sianipar",
     "email": "vannleonheart@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vannleonheart/spl_validator"
   },
   "license": "ISC"
 }
