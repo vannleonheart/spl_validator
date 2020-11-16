@@ -37,7 +37,7 @@ class Validator {
     }
 
     SetRulesetPath (rulesetPath) {
-        if (typeof options.rulesetPath === 'string' && rulesetPath.length) {
+        if (typeof rulesetPath === 'string' && rulesetPath.length) {
             if (fs.existsSync(path.resolve(rulesetPath))) {
                 this.RulesetPath = rulesetPath
             }
