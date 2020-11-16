@@ -203,4 +203,24 @@ Rules.Max = async (value, input, fieldName) => {
     return input
 }
 
+Rules.Lowercase = async (value, input, fieldName) => {
+    if (true === value) {
+        let fieldValue = String(input[fieldName]).toLowerCase()
+
+        input[fieldName] = fieldValue
+    }
+
+    return input
+}
+
+Rules.Uppercase = async (value, input, fieldName) => {
+    if (true === value) {
+        let fieldValue = String(input[fieldName]).toUpperCase()
+
+        input[fieldName] = fieldValue
+    }
+
+    return input
+}
+
 module.exports = Rules

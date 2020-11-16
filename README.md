@@ -41,6 +41,8 @@ try {
 | Integer   | Input must have integer value                                     | boolean           |
 | Min       | Input must have value greater or equal than specified value       | boolean           |
 | Max       | Input must have value less or equal than specified value          | boolean           |
+| Lowercase | Transform input to lowercase string                               | boolean           |
+| Uppercase | Transform input to uppercase string                               | boolean           |
 
 
 ## Ruleset From File

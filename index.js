@@ -1,6 +1,5 @@
 const path = require('path')
 const fs = require('fs')
-const { type } = require('os')
 
 class Validator {
     RulesetPath
