@@ -45,7 +45,7 @@ class Validator {
     }
 
     GetRulesetPath () {
-        const dirName = __dirname
+        let dirName = __dirname
 
         if (this.RulesetPath && typeof this.RulesetPath === 'string' && this.RulesetPath.length) {
             dirName = this.RulesetPath
