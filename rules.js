@@ -68,7 +68,7 @@ Rules.MinLength = async (value, input, fieldName) => {
         value = 0
     }
     
-    const fieldValue = String(input[fieldName]).trim()
+    const fieldValue = input[fieldName] ? String(input[fieldName]).trim() : undefined
 
     if (!Rules.IsEmpty(fieldValue) && fieldValue.length < value) {
         throw new Error(`minimum length of ${fieldName} is ${value}`)
@@ -84,7 +84,7 @@ Rules.MaxLength = async (value, input, fieldName) => {
         value = 0
     }
     
-    const fieldValue = String(input[fieldName]).trim()
+    const fieldValue = input[fieldName] ? String(input[fieldName]).trim() : undefined
 
     if (!Rules.IsEmpty(fieldValue) && fieldValue.length > value) {
         throw new Error(`maximum length of ${fieldName} is ${value}`)
@@ -100,7 +100,7 @@ Rules.Length = async (value, input, fieldName) => {
         value = 0
     }
     
-    const fieldValue = String(input[fieldName]).trim()
+    const fieldValue = input[fieldName] ? String(input[fieldName]).trim() : undefined
 
     if (!Rules.IsEmpty(fieldValue) && fieldValue.length != value) {
         throw new Error(`${fieldName} length must be ${value}`)
@@ -110,7 +110,7 @@ Rules.Length = async (value, input, fieldName) => {
 }
 
 Rules.EqualTo = async (value, input, fieldName) => {
-    const fieldValue = String(input[fieldName]).trim()
+    const fieldValue = input[fieldName] ? String(input[fieldName]).trim() : undefined
     
     if (!Rules.IsEmpty(fieldValue)) {
         value = String(value.trim())
@@ -126,7 +126,7 @@ Rules.EqualTo = async (value, input, fieldName) => {
 }
 
 Rules.Enum = async (value, input, fieldName) => {
-    const fieldValue = String(input[fieldName]).trim()
+    const fieldValue = input[fieldName] ? String(input[fieldName]).trim() : undefined
     
     if (!Rules.IsEmpty(fieldValue)) {
         if (!Array.isArray(value)) {
@@ -160,7 +160,7 @@ Rules.Integer = async (value, input, fieldName) => {
 }
 
 Rules.Min = async (value, input, fieldName) => {
-    let fieldValue = String(input[fieldName]).trim()
+    let fieldValue = input[fieldName] ? String(input[fieldName]).trim() : undefined
 
     if (!Rules.IsEmpty(fieldValue)) {
         if (isNaN(fieldValue)) {
@@ -182,7 +182,7 @@ Rules.Min = async (value, input, fieldName) => {
 }
 
 Rules.Max = async (value, input, fieldName) => {
-    let fieldValue = String(input[fieldName]).trim()
+    let fieldValue = input[fieldName] ? String(input[fieldName]).trim() : undefined
 
     if (!Rules.IsEmpty(fieldValue)) {
         if (isNaN(fieldValue)) {
