@@ -228,7 +228,7 @@ Rules.Date = async (value, input, fieldName) => {
 
     if (!Rules.IsEmpty(value) && !Rules.IsEmpty(fieldValue)) {
         const { DateTime } = require('luxon')
-        const dateObj = DateTime.fromFormat(fieldValue, value).is
+        const dateObj = DateTime.fromFormat(fieldValue, value)
 
         if (!dateObj.isValid || dateObj.toFormat(value) !== fieldValue) {
             throw new Error(`${fieldName} value must be a date with format ${value}`)
