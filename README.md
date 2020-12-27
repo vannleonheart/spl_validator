@@ -43,6 +43,7 @@ try {
 | Max       | Input must have value less or equal than specified value          | boolean           |
 | Lowercase | Transform input to lowercase string                               | boolean           |
 | Uppercase | Transform input to uppercase string                               | boolean           |
+| Date      | Input must be a date string with given format                     | string            |
 
 
 ## Ruleset From File

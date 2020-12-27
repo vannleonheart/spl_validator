@@ -223,4 +223,19 @@ Rules.Uppercase = async (value, input, fieldName) => {
     return input
 }
 
+Rules.Date = async (value, input, fieldName) => {
+    let fieldValue = input[fieldName] ? String(input[fieldName]).trim() : undefined
+
+    if (!Rules.IsEmpty(value) && !Rules.IsEmpty(fieldValue)) {
+        const { DateTime } = require('luxon')
+        const dateObj = DateTime.fromFormat(fieldValue, value)
+
+        if (!dateObj.isValid() || dateObj.toFormat(value) !== fieldValue) {
+            throw new Error(`${fieldName} value must be a date with format ${value}`)
+        }
+    }
+
+    return input
+}
+
 module.exports = Rules
