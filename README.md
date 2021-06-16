@@ -44,6 +44,7 @@ try {
 | Lowercase | Transform input to lowercase string                               | boolean           |
 | Uppercase | Transform input to uppercase string                               | boolean           |
 | Date      | Input must be a date string with given format                     | string            |
+| RegEx     | Input must be a regular expression string                         | string            |
 
 
 ## Ruleset From File
