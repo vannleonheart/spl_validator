@@ -1,6 +1,6 @@
 {
   "name": "spl_validator",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Simple and extensible validator",
   "main": "index.js",
   "scripts": {

@@ -238,4 +238,18 @@ Rules.Date = async (value, input, fieldName) => {
     return input
 }
 
+Rules.RegEx = async (value, input, fieldName) => {
+    let fieldValue = input[fieldName] ? String(input[fieldName]).trim() : undefined
+
+    if (!Rules.IsEmpty(value) && !Rules.IsEmpty(fieldValue)) {
+        const pattern = new RegExp(value)
+
+        if (!pattern.test(fieldValue)) {
+            throw new Error(`${fieldName} value must be in ${value} format`)
+        }
+    }
+
+    return input
+}
+
 module.exports = Rules
